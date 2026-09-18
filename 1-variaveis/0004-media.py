@@ -1,6 +1,6 @@
 import os 
 
-#limpar terminal 
+#limpar terminal
 
 os.system('cls')
 
