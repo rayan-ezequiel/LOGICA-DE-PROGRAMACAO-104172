@@ -13,4 +13,4 @@ for i in range(QUANTIDADE):
     else: impar += 1
 
 print(f'A quantidade de pares é: {par}')
-print(f'A quantidade de pares é: {impar}')
+print(f'A quantidade de impares é: {impar}')
