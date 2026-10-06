@@ -24,7 +24,6 @@ while True:
     if saldo <= 0:
         print('Seu saldo acabou depoiste para continuar.')
         deposito = int(input('Quanto deseja depositar ? '))
-        os.system('cls')
         saldo += deposito
     aposta = int(input('Valor da aposta: '))
     
@@ -61,21 +60,21 @@ while True:
             saldo += multiplicador
             print('Parabéns você ganhou o jogo.')
             print(f'🍫​ 2x. seu saldo agora é: {saldo}')
-            os.system('cls')
+            
     
     elif escolha == escolha1 == escolha2 == biscoito:
             multiplicador = aposta * 6.0
             saldo += multiplicador
             print('Parabéns você ganhou o jogo.')
             print(f'🍪​ 6x. seu saldo agora é: {saldo}')
-            os.system('cls')
+            
     
     elif escolha == escolha1 == escolha2 == rosca:
             multiplicador = aposta * 10.0
             saldo += multiplicador
             print('Parabéns você ganhou o jogo.')
             print(f'🍩​ 10x. seu saldo agora é: {saldo}')
-            os.system('cls')
+            
     else:
         print(f'você perdeu: {saldo}')
         continue
