@@ -39,4 +39,5 @@ while True:
         print(f'Média do número de filhos: {media_filhos}')
         print(f'Maior salário: R$ {maior_salario}')
         print(f'Menor salário: R$ {menor_salario}')
+        
         break
