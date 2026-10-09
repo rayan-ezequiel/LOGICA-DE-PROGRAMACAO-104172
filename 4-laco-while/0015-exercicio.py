@@ -3,16 +3,18 @@ import time
 os.system('cls')
 
 quantidade_de_familias = 0
-lista_de_filhos = [] 
-lista_de_salarios = [] 
+lista_de_filhos = []
+lista_de_salarios = []
 
-while True: 
+while True:
+    
     print(' Código |   Descrição')
     print('   1    |   Adicionar família')
     print('   2    |   Sair e exibir resultados')
     escolha = int(input('Escolha: '))
-
-    if escolha == 1: 
+    
+    if escolha == 1:
+        
         salario = int(input('Qual o salário da família ? R= R$ '))
         lista_de_salarios.append(salario)
         quantidade_de_familias += 1
@@ -20,7 +22,9 @@ while True:
         filhos = int(input('Quantos filhos tem na família ? R= '))
         lista_de_filhos.append(filhos)
         continue
+        
     elif escolha == 2:
+        
         if quantidade_de_familias == 0:
             print("Nenhum dado foi registado na pesquisa.")
             break
@@ -28,6 +32,7 @@ while True:
         menor_salario = min(lista_de_salarios)
         media_salario_da_populacao = sum(lista_de_salarios) / quantidade_de_familias
         media_filhos = sum (lista_de_filhos) / quantidade_de_familias
+        
         print(f'RESULTADO DA PESQUISA')
         print(f'\nTotal de respostas: {quantidade_de_familias} famílias')
         print(f'Média do salário da população: R$ {media_salario_da_populacao}')
