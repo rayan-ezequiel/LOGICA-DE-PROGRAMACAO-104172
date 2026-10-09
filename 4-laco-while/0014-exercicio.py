@@ -33,7 +33,7 @@ while True:
     elif escolha == 2:
         if len(idade_list) > 0:
             print('Nenhuma pessoa, foi adicionada ainda!')
-        
+            break
         else:
             media_salarial = soma_salario / len(salario_list)
             maior_idade = max(idade_list)
