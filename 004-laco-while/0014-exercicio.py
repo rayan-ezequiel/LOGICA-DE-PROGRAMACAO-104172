@@ -31,7 +31,7 @@ while True:
         continue
     
     elif escolha == 2:
-        if len(idade_list) > 0:
+        if len(idade_list) <= 0:
             print('Nenhuma pessoa, foi adicionada ainda!')
             break
         else:
