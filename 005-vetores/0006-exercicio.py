@@ -11,7 +11,7 @@ while True:
     vez += 1
     
     if len(notas) == 4:
-        media = sum(notas) / len(notas)
+        media = sum(notas) / len(notas) d
         
         if media >= 7:
             print(f'O aluno está aprovado com média: {media}')
