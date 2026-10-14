@@ -3,7 +3,7 @@ os.system('cls')
 
 numeros = []
 
-while True: 
+while True:
     
     numeros.append(int(input('Digite um número inteiro: ')))
     soma_positivos = sum([x for x in numeros if x > 0])

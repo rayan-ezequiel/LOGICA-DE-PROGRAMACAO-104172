@@ -14,10 +14,10 @@ while True:
     print('\n 4	  | Bife Acebolado	    | R$ 15,00 ')
     print('\n 5	  | Pão com ovo	            | R$ 5,00 \n')
     
-    pedido = int(input(f'Qual prato o senhor(a) deseja (Digite o código) ? \n'))
+    pedido = int(input(f'\nQual prato o senhor(a) deseja (Digite o código) ? \n'))
     pedidos_totais.append(pedido)
 
-    continuar = int(input(('\nDeseja fazer mais algum pedido ? \nDigite 1 para sim e 2 para não: ')))
+    continuar = int(input((f'\nDeseja fazer mais algum pedido ? \nDigite 1 para sim e 2 para não: ')))
     if continuar == 1:
         continue
     else:
@@ -26,10 +26,10 @@ while True:
         picanha_qtd = pedidos_totais.count(1)
         picanha_total = picanha_qtd * 25
 
-        lasanha_qtd = pedidos_totais.count(2) 
-        lasanha_total = lasanha_qtd * 20           
+        lasanha_qtd = pedidos_totais.count(2)
+        lasanha_total = lasanha_qtd * 20
 
-        strogonoff_qtd = pedidos_totais.count(3) 
+        strogonoff_qtd = pedidos_totais.count(3)
         strogonoff_total = strogonoff_qtd * 18
 
         bife_acebolado_qtd = pedidos_totais.count(4)
