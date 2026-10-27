@@ -71,7 +71,7 @@ while True:
         
     jogar_novamente = input('Deseja continuar ? ').lower()
     if jogar_novamente == 's':
-        print(f'Vamos continuar!\n')
+        print('Vamos continuar!')
         continue
     else:
         break
