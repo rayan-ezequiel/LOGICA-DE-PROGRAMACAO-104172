@@ -11,4 +11,7 @@ while True:
     print('0 - SAIR')
 
     nome = input('Digite o nome da série: ')
+
+    match nome:
+        # validação
     
