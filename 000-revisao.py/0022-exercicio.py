@@ -55,7 +55,9 @@ while True:
     if vez == 10:
         break
 print('RESULTADO DAS ELEIÇÕES')
-print(F'VENCEDOR: {max(candidato_22, canditado_13, canditado_13)}')
-print(F'ULTIMO: {min(candidato_22, canditado_13, canditado_13)}')
+
+print(f'VENCEDOR: {max(candidato_22, canditado_13, canditado_13) }')
+print(f'ULTIMO: {min(candidato_22, canditado_13, canditado_13)}')
+print(f'NULOS/INVÁLIDOS: {invalidos}')
         
     
