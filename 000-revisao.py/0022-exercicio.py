@@ -41,7 +41,7 @@ while True:
         elif voto == 14:
                 confirmar = input('Confirma voto em Renan Santos? (S/N): ').upper()
                 if confirmar == 'S':
-                    candidato_14 += 1
+                    canditato_14 += 1
                     print('voto confirmado com sucesso')
         else:
             print('Candidato inválido...')
