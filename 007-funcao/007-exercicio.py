@@ -2,11 +2,17 @@ import os
 os.system('cls')
 nome = ""
 telefone = ""
+nomes = []
+telefones = []
+
 def cadastrar_cliente():
     global nome
-    global telefone
     nome = input('Digite seu nome: ')
+    nomes.append(nome)
+    global telefone
     telefone = int(input('Digite seu telefone: '))
+    telefones.append(telefone)
+
 def mostrar_dados():
     print(f'Nome do cliente: {nome}')
     print(f'Telefone do cliente: {telefone}')
