@@ -37,6 +37,6 @@ while True:
             else:
                 mostrar_dados()
         case 0:
-            break
+            exit()
         case _:
             print('Esse valor nao existe...')
