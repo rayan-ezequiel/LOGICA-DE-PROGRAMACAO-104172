@@ -1,11 +1,12 @@
 import os
-os.system('cls')
+
+os.system('cls' if os.name == 'nt' else 'clear')
 
 def metro_para_centimetros(metros):
     centimetros = metros * 100
     return centimetros
 
 metros = float(input('Digite a quantidade de metros: '))
-centimetros = float(input('Digite a quantidade de centimetros: '))
+centimetros = metro_para_centimetros(metros)
 
-print(f'{metros} metro equivalem a {centimetros} centimetros.')(num1, num2)
+print(f'{metros} metro(s) equivalem a {centimetros} centímetros.')
