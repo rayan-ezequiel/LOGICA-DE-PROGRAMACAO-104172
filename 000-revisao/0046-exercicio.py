@@ -68,8 +68,7 @@ def saque(saldo):
         print('Valor inválido')
     return saldo
 
-def ver_extrato(saques, depositos):
-    
+def ver_extrato(depositos, saques):    
     print('== EXTRATO BANCÁRIO ==')
     print(f'\n== DEPÓSITOS ({len(depositos)}) ==')
     if not depositos:
