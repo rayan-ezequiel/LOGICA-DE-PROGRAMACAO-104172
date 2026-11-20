@@ -7,9 +7,8 @@ os.system('cls' if os.name == 'nt' else 'clear')
 senha_certa = '123'
 depositos = []
 saques = []
-
 def senha_de_acesso():
-    
+    erros_senha = 0
     for tentativas in range(3):
         print('== SENHA DE ACESSO ==')
         senha_de_acesso = input('Digite sua senha: ')
@@ -18,8 +17,11 @@ def senha_de_acesso():
             break
         else:
             print(f'ACESSO RECUSADO Restam {2 - tentativas} tentativas.\n')
-            continue
-            
+        if senha_de_acesso != senha_certa:
+            erros_senha += 1
+            if erros_senha == 3:
+                print('Número de tentativas atingido.\nCONTA BLOQUEADA')
+                sys.exit()
     time.sleep(0.7)
 
 def menu():
