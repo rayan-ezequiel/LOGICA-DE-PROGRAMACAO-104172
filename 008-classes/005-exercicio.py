@@ -21,6 +21,7 @@ for i in range(2):
 
 print('\nEXIBINDO DADOS\n')
 for cliente in lista_de_cliente:
+    print('='*15)
     print(f'Nome: {cliente.nome}')
     print(f'Telefone: {cliente.telefone}')
     print(f'Email: {cliente.email}')
