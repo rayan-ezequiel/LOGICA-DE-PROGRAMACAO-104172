@@ -11,12 +11,13 @@ class Cliente:
 
 lista_de_cliente = []
 
-dados_do_cliente = Cliente(
-    nome = input('Digite seu nome: '),
-    telefone = input('Digite seu telefone: '),
-    email = input('Digite seu email: ')
-)
-lista_de_cliente.append(dados_do_cliente)
+for i in range(2):
+    dados_do_cliente = Cliente(
+        nome = input('Digite seu nome: '),
+        telefone = input('Digite seu telefone: '),
+        email = input('Digite seu email: ')
+    )
+    lista_de_cliente.append(dados_do_cliente)
 
 print('\nEXIBINDO DADOS\n')
 for cliente in lista_de_cliente:
